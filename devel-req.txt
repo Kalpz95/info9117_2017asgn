@@ -9,7 +9,7 @@ MarkupSafe==1.0
 parse==1.8.0
 parse-type==0.3.4
 PyHamcrest==1.9.0
-selenium==3.3.1
+selenium==3.4
 six==1.10.0
 SQLAlchemy==1.1.8
 Werkzeug==0.12.1
