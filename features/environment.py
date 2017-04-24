@@ -9,7 +9,7 @@ def before_all(ctx):
     ctx.server = flaskr.flaskr
     ctx.thread = threading.Thread(target=ctx.server.test_server)
     ctx.thread.start()  # start flask app server
-    ctx.browser = webdriver.Firefox()
+    ctx.browser = webdriver.Firefox(executable_path=r'C:\Program Files (x86)\geckodriver\geckodriver.exe')
     ctx.server_address = "http://" + app.config['SERVER_NAME']
     ctx.home = ctx.server_address
 
