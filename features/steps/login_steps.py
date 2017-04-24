@@ -21,7 +21,8 @@ def see_login_button(context):
     assert see_login_button_found
 
 @when(u'she logs in with username "{username}" and password "{password}"')
-def login(context, username='test', password='test123'):
+def login(context, username, password):
+    context.browser.get(context.home + "/login")
     uname = context.browser.find_element_by_name('username')
     passwd = context.browser.find_element_by_name('password')
     login_button = context.browser.find_element_by_id('btn_login')
